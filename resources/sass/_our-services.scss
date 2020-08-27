@@ -1,0 +1,444 @@
+.our-services{
+    position: relative;
+
+    .heading{
+        @include heading-usage(#005aab);
+    }
+
+    .services-container{
+        padding: 1rem 0rem;
+        position: relative;
+        overflow: hidden;
+
+        .our-services-card-style-1{
+            margin: 2rem 0rem;
+            padding-left: 5rem;
+            display: grid;
+            grid-template-columns: 40% 60%;
+
+            .card-item-1-1{
+                @include photo-card-style;
+            }
+
+            .card-item-1-2{
+                @include photo-card-style;
+            }
+
+            .card-item-1-3{
+                @include photo-card-style;
+            }
+
+            .card-item-1-4{
+                @include photo-card-style;
+            }
+
+            .card-item-2{
+                background-color: #ecfaff;
+                padding-right: 6rem;
+                z-index: 5;
+
+                .item{
+                    padding-left: 2rem;
+                    text-align: left;
+                    position: relative;
+                    height: 100%;
+                    @include bp(laptop-1){
+                        padding: 0rem 2rem;
+                    }
+
+                    .content{
+                        padding: 2rem 3rem;
+                        @include bp(laptop){
+                            padding: 2rem 2rem;
+                        }
+                        @include bp(laptop-1){
+                            padding: 0rem 0rem;
+                        }
+
+                        button{
+                            font-weight: bold;
+                            color: #0091ff;
+                            padding: 0.8rem 2rem;
+                            background-color: transparent;
+                            border: 1px solid #005aab;
+
+                            &:after{
+                                content: ' \2192';
+                                font-size: 1.3rem;
+                                padding: 0rem 1rem;
+                            }
+                        }
+
+                        h2{
+                            font-size: 1.5rem;
+                            @include bp(desktop-big){
+                                font-size: 2.5rem;
+                                padding: 2.5rem 0rem;
+                            }
+                            @include bp(desktop){
+                                font-size: 1.8rem;
+                                padding: 2rem 0rem;
+                            }
+                            @include bp(laptop){
+                                font-size: 1.2rem;
+                            }
+                            @include bp(laptop-1){
+                                font-size: 1rem;
+                                padding: 1.5rem 0rem;
+                            }
+                            font-family: $font-mm;
+                            color: #1d0c8e;
+                            padding: 1rem 0rem;
+                        }
+
+                        .lifetime{
+                            font-family: $font-mm;
+                            text-align: center;
+                            max-width: 12rem;
+                            padding: 0.5rem;
+                            background-color: #c9e5ff;
+                            @include bp(desktop-big){
+                                max-width: 18rem;
+                                padding: 1rem;
+                            }
+                            @include bp(desktop){
+                                max-width: 16rem;
+                                padding: 0.6rem;
+                            }
+                            
+                            @include bp(laptop){
+                                font-size: 0.9rem;
+                                padding: 0.2rem;
+                            }
+                            @include bp(laptop-1){
+                                max-width: 11rem;
+                                padding: 0.2rem;
+                            }
+                        }
+
+                        .text{
+                            font-size: 0.8rem;
+                            @include bp(desktop-big){
+                                font-size: 1.3rem;
+                            }
+                            @include bp(desktop){
+                                font-size: 1.2rem;
+                            }
+                            font-family: $font-mm;
+                            padding: 1.5rem 0rem;
+                        }
+                    }
+
+                    &:after{
+                        position: absolute;
+                        content: "";
+                        width: 20%;
+                        height: 100%;
+                        top: 0;
+                        right: 0;
+                        background: transparent;  
+                        border-right: 2px solid #0091ff;
+                        border-top: 2px solid #0091ff;
+                        border-bottom: 2px solid #0091ff;
+
+                    }
+                }
+
+                
+            }
+
+        }
+        .our-services-card-style-2{
+            position: relative;
+            margin: 4rem 0rem;
+            padding-right: 8rem;
+            display: grid;
+            grid-template-columns: 60% 40%;
+
+            .card-item-1-1{
+                @include photo-card-style-2;
+            }
+
+            .card-item-1-2{
+                @include photo-card-style-2;
+            }
+
+            .card-item-1-3{
+                @include photo-card-style-2;
+            }
+
+            .card-item-1-4{
+                @include photo-card-style-2;
+            }
+
+            .card-item-2{
+                background-color: #ecfaff;
+                padding-left: 6rem;
+                z-index: 5;
+
+                .item{
+                    text-align: left;
+                    position: relative;
+                    height: 100%;
+                    @include bp(laptop-1){
+                        padding: 0rem 2rem;
+                    }
+
+                    .content{
+
+                        padding: 2rem 3rem;
+                        @include bp(laptop){
+                            padding: 2rem 2rem;
+                        }
+                        @include bp(laptop-1){
+                            padding: 0rem 0rem;
+                        }
+
+                        button{
+                            font-weight: bold;
+                            color: #0091ff;
+                            padding: 0.8rem 2rem;
+                            background-color: transparent;
+                            border: 1px solid #005aab;
+
+                            &:after{
+                                content: ' \2192';
+                                font-size: 1.2rem;
+                                padding: 0rem 1rem;
+                            }
+                        }
+
+                        h2{
+                            font-size: 1.5rem;
+                            font-family: $font-mm;
+                            color: #1d0c8e;
+                            padding: 1rem 0rem;
+                            @include bp(desktop-big){
+                                font-size: 2.5rem;
+                                padding: 2.5rem 0rem;
+                            }
+                            @include bp(desktop){
+                                font-size: 1.8rem;
+                                padding: 2rem 0rem;
+                            }
+                            @include bp(laptop){
+                                font-size: 1.2rem;
+                            }
+                            @include bp(laptop-1){
+                                font-size: 1rem;
+                                padding: 1.5rem 0rem;
+                            }
+                        }
+
+                        .lifetime{
+                            font-family: $font-mm;
+                            text-align: center;
+                            max-width: 14rem;
+                            padding: 0.5rem;
+                            background-color: #c9e5ff;
+                            @include bp(desktop-big){
+                                max-width: 20rem;
+                                padding: 1rem;
+                            }
+                            @include bp(desktop){
+                                max-width: 16rem;
+                                font-size: 1.2rem;
+                            }
+                            @include bp(laptop){
+                                max-width: 12rem;
+                                font-size: 0.9rem;
+                                padding: 0.2rem;
+                            }
+                            @include bp(laptop-1){
+                                max-width: 11rem;
+                                font-size: 0.8rem;
+                                padding: 0.2rem;
+                            }
+                        }
+
+                        .text{
+                            font-size: 0.8rem;
+                            font-family: $font-mm;
+                            padding: 1.5rem 0rem;
+                            @include bp(desktop-big){
+                                font-size: 1.3rem;
+                            }
+                            @include bp(desktop){
+                                font-size: 1.2rem;
+                            }
+                            @include bp(laptop){
+                                line-height: 1.5rem!important;
+                            }
+                            @include bp(laptop-1){
+                                line-height: 1.5rem!important;
+                            }
+                        }
+                    }
+
+                    &:before{
+                        position: absolute;
+                        content: "";
+                        width: 20%;
+                        height: 45%;
+                        top: 0;
+                        left: 0;
+                        background: transparent;  
+                        border-left: 2px solid #0091ff;
+                        border-top: 2px solid #0091ff;  
+                    }
+                }
+            }
+
+        }
+
+        .photo-card-1{
+            &:before{
+                position: absolute;
+                content: "";
+                width: 65%;
+                height: 52%;
+                background: #e2f2ff;
+                transform: rotate(45deg);
+                right: 103%;
+                bottom: 31%;
+            }
+        }
+
+        .photo-card-2{
+            &:before{
+                position: absolute;
+                content: "";
+                width: 65%;
+                height: 52%;
+                background: #e2f2ff;
+                transform: rotate(45deg);
+                right: 100%;
+                bottom: 7%;
+            }
+        }
+
+        .photo-card-3{
+            &:before{
+                position: absolute;
+                content: "";
+                width: 65%;
+                height: 52%;
+                background: #e2f2ff;
+                transform: rotate(45deg);
+                right: 100%;
+                bottom: -17%;
+            }
+        }
+
+        .photo-card-4{
+            &:after{
+                position: absolute;
+                content: "";
+                width: 55%;
+                height: 200%;
+                background: #f2f4f6;
+                transform: rotate(45deg);
+                right: -18%;
+                bottom: -72%;
+                @include bp(desktop){
+                    bottom: -79%;
+                }
+                @include bp(desktop-1){
+                    bottom: -83%;
+                }
+                @include bp(laptop){
+                    bottom: -82%;
+                }
+                @include bp(laptop-1){
+                    bottom: -71%;
+                }
+            }
+        }
+
+        .photo-card-5{
+            &:after{
+                position: absolute;
+                content: "";
+                width: 55%;
+                height: 200%;
+                background: #f2f4f6;
+                transform: rotate(45deg);
+                right: -18%;
+                bottom: -72%;
+                @include bp(desktop){
+                    bottom: -79%;
+                }
+                @include bp(desktop-1){
+                    bottom: -83%;
+                }
+                @include bp(laptop){
+                    bottom: -82%;
+                }
+                @include bp(laptop-1){
+                    bottom: -71%;
+                }
+            }
+        }
+
+        .photo-card-6{
+            &:after{
+                position: absolute;
+                content: "";
+                width: 55%;
+                height: 200%;
+                background: #f2f4f6;
+                transform: rotate(45deg);
+                right: -18%;
+                bottom: -72%;
+                @include bp(desktop-big){
+                    bottom: -79%;
+                }
+                @include bp(desktop){
+                    bottom: -86%;
+                }
+                @include bp(desktop-1){
+                    bottom: -83%;
+                }
+                @include bp(laptop){
+                    bottom: -82%;
+                }
+                @include bp(laptop-1){
+                    bottom: -71%;
+                }
+            }
+        }
+
+        .photo-card-7{
+            &:after{
+                position: absolute;
+                content: "";
+                width: 55%;
+                height: 200%;
+                background: #f2f4f6;
+                transform: rotate(45deg);
+                right: -18%;
+                bottom: -72%;
+                @include bp(desktop){
+                    bottom: -86%;
+                }
+                @include bp(laptop){
+                    bottom: -82%;
+                }
+                @include bp(laptop-1){
+                    bottom: -71%;
+                }
+            }
+        }
+    }
+    &:after{
+        position: absolute;
+        content: "";
+        width: 20%;
+        height: 300px;
+        left: 5px;
+        top: -45px;
+        background: linear-gradient(to top left, #fff 0%, #fff 50%, #e2f2ff 50%, #e2f2ff 100%);
+    }
+}
+
+

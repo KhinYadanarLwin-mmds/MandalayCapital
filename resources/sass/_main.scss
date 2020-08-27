@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 16px;
+    background: #FFFFFF;
+    font-family: $font-body;
+    line-height: 2rem;
+    @include bp(desktop-big){
+        font-size: 1.5rem!important;
+        line-height: 2.5rem!important;
+    }
+    @include bp(desktop){
+        font-size: 1.3rem!important;
+    }
+    @include bp(desktop-1){
+        font-size: 1.2rem!important;
+        line-height: 2.3rem!important;
+    }
+    @include bp(laptop){
+        font-size: 1rem!important;
+    }
+    @include bp(laptop-1){
+        font-size: 0.8rem!important;
+        line-height: 1.5rem!important;
+    }
+}
+
+button{
+    cursor: pointer;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    color: white;
+    // margin-right: 2rem !important;
+
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    color: white;
+    // margin-left: 2rem !important;
+}
+
+// .swiper-pagination-bullet{
+//     background: white;
+//     opacity: 1;
+// }
+
+
+
