@@ -1,4 +1,4 @@
-<section>
+<section class="meet-our-member">
     <div class="swiper-container meet-our-team">
         <div class="heading">
             <h1>Meet Our Team</h1>

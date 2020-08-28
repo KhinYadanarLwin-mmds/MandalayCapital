@@ -1,221 +1,225 @@
-.meet-our-team{
+.meet-our-member{
     background-image: radial-gradient(circle at 50% 50%, #007be7, #003a6d 84%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 3rem 5rem;
-    position: relative;
-
-    .heading{
-        @include heading-usage(white);
-    }
-
-    .swiper-wrapper{
-        // margin: 0rem 2rem;
+    
+    .meet-our-team{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        .swiper-slide{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            // padding: 20px;
-            // margin-right: 3.5rem!important;
-            // margin-left: 1rem!important;
-            @include bp(desktop-big){
-                margin-left: 4rem!important;
-                margin-right: 4rem!important;
-                width: 20rem!important;
-            }
-            @include bp(desktop){
-                margin-left: 4.3rem!important;
-                margin-right: 4.3rem!important;
-                width: 16rem !important;
-            }
-            @include bp(desktop-1){
-                margin-right: 3.5rem !important;
-                margin-left: 3.5rem !important;
-                width: 14rem!important;
-            }
-            @include bp(laptop){
-                margin-right: 3rem !important;
-                margin-left: 3rem !important;
-                width: 13rem!important;
-            }
-            @include bp(laptop-1) {
-                width: 11rem!important;
-                margin-right: 2rem!important;
-                margin-left: 2rem!important;
-            }
+        
+        position: relative;
+    
+        .heading{
+            @include heading-usage(white);
         }
-
-        .item{
-            position: relative;
-            margin: 3rem 0rem;
-            @include bp(desktop-big){
-
-            }
-            @include bp(desktop){
-
-            }
-            @include bp(desktop-1){
-
-            }
-            @include bp(laptop-1){
-
-            }
-            justify-content: flex-end;
-            align-items: center;
-
-            .image{
-                height: 13rem;
-                width: 100%;
+    
+        .swiper-wrapper{
+            // margin: 0rem 2rem;
+            justify-content: center;
+            .swiper-slide{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // padding: 20px;
+                // margin-right: 3.5rem!important;
+                // margin-left: 1rem!important;
                 @include bp(desktop-big){
-                    height: 20rem;
+                    margin-left: 4rem!important;
+                    margin-right: 4rem!important;
+                    width: 20rem!important;
                 }
                 @include bp(desktop){
-                    height: 16rem;
+                    margin-left: 4.3rem!important;
+                    margin-right: 4.3rem!important;
+                    width: 16rem !important;
                 }
                 @include bp(desktop-1){
-                    height: 14rem;
+                    margin-right: 3.5rem !important;
+                    margin-left: 3.5rem !important;
+                    width: 14rem!important;
+                }
+                @include bp(laptop){
+                    margin-right: 3rem !important;
+                    margin-left: 3rem !important;
+                    width: 13rem!important;
+                }
+                @include bp(laptop-1) {
+                    width: 11rem!important;
+                    margin-right: 2rem!important;
+                    margin-left: 2rem!important;
+                }
+            }
+    
+            .item{
+                position: relative;
+                margin: 3rem 0rem;
+                @include bp(desktop-big){
+    
+                }
+                @include bp(desktop){
+    
+                }
+                @include bp(desktop-1){
+    
                 }
                 @include bp(laptop-1){
-                    height: 11rem;
+    
                 }
-
-                img{
+                justify-content: flex-end;
+                align-items: center;
+    
+                .image{
+                    height: 13rem;
                     width: 100%;
-                }
-            }
-
-            .icons{
-                width: 100%;
-                position: absolute;
-                padding: 10px;
-                display: none;
-                cursor: pointer;
-                bottom: 4.5rem;
-                @include bp(desktop-big){
-                    bottom: 5rem;
-                }
-
-                .icon-img{
-                    width: 2rem;
-                    height: 2rem;
                     @include bp(desktop-big){
-                        width: 3rem;
-                        height: 3rem;
+                        height: 20rem;
                     }
-                    background: white;
-                    border-radius: 50%;
-                    text-align: center;
-                    margin: 0rem 0.3rem;
-
+                    @include bp(desktop){
+                        height: 16rem;
+                    }
+                    @include bp(desktop-1){
+                        height: 14rem;
+                    }
+                    @include bp(laptop-1){
+                        height: 11rem;
+                    }
+    
                     img{
-                        width: auto;
-                        height: auto;
-                        margin-top: 7px;
-                        @include bp(desktop-big){
-                            margin-top: 13px;
-                        }
-                    }
-                    
-                }
-            }
-
-            .role{
-                display: block;
-                background-color: white;
-                width: 100%;
-                text-align: center;
-
-                p{
-                    &:nth-child(1){
-                        color: rgba(0, 0, 0, 0.85);
-                        font-weight: bold;
-                        @include bp(desktop-big){
-                            padding: 1rem;
-                        }
-                        @include bp(desktop){
-                            padding: 1rem;
-                        }
-                    }
-                    &:nth-child(2){
-                        font-size: 0.7rem;
-                        @include bp(desktop-big){
-                            font-size: 1rem!important;
-                        }
-                        color: #6d7278;
+                        width: 100%;
                     }
                 }
-            }
-
-            &:hover{
-
+    
                 .icons{
-                    display:flex;
-                    justify-content: center;
-                    background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0.21) 39%, rgba(5, 5, 5, 0.21) 39%, #0c0c0c);
+                    width: 100%;
+                    position: absolute;
+                    padding: 10px;
+                    display: none;
+                    cursor: pointer;
+                    bottom: 4.5rem;
+                    @include bp(desktop-big){
+                        bottom: 5rem;
+                    }
+    
+                    .icon-img{
+                        width: 2rem;
+                        height: 2rem;
+                        @include bp(desktop-big){
+                            width: 3rem;
+                            height: 3rem;
+                        }
+                        background: white;
+                        border-radius: 50%;
+                        text-align: center;
+                        margin: 0rem 0.3rem;
+    
+                        img{
+                            width: auto;
+                            height: auto;
+                            margin-top: 7px;
+                            @include bp(desktop-big){
+                                margin-top: 13px;
+                            }
+                        }
+                        
+                    }
                 }
-              
+    
+                .role{
+                    display: block;
+                    background-color: white;
+                    width: 100%;
+                    text-align: center;
+    
+                    p{
+                        &:nth-child(1){
+                            color: rgba(0, 0, 0, 0.85);
+                            font-weight: bold;
+                            @include bp(desktop-big){
+                                padding: 1rem;
+                            }
+                            @include bp(desktop){
+                                padding: 1rem;
+                            }
+                        }
+                        &:nth-child(2){
+                            font-size: 0.7rem;
+                            @include bp(desktop-big){
+                                font-size: 1rem!important;
+                            }
+                            color: #6d7278;
+                        }
+                    }
+                }
+    
+                &:hover{
+    
+                    .icons{
+                        display:flex;
+                        justify-content: center;
+                        background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0.21) 39%, rgba(5, 5, 5, 0.21) 39%, #0c0c0c);
+                    }
+                  
+                }
             }
         }
-    }
-    .pagination{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .pagination-1{
-            width: 10px;
-            height: 10px;
-            @include bp(desktop-big){
-                width: 15px;
-                height: 15px;
+        .pagination{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .pagination-1{
+                width: 10px;
+                height: 10px;
+                @include bp(desktop-big){
+                    width: 15px;
+                    height: 15px;
+                }
+                margin: 0rem 0.5rem;
+                display: inline-block;
+                border-radius: 100%;
+    
+                &.active{
+                    background: #0091ff;
+                }
+                &.disable{
+                    background: white;
+                }
             }
-            margin: 0rem 0.5rem;
-            display: inline-block;
-            border-radius: 100%;
-
-            &.active{
-                background: #0091ff;
-            }
-            &.disable{
-                background: white;
-            }
+            .pagination-2{
+                width: 10px;
+                height: 10px;
+                @include bp(desktop-big){
+                    width: 15px;
+                    height: 15px;
+                }
+                margin: 0rem 0.5rem;
+                display: inline-block;
+                border-radius: 100%;
+    
+                &.active{
+                    background: #0091ff;
+                    opacity: 1;
+                }
+                &.disable{
+                    background: white;
+                }
+            }   
+            
         }
-        .pagination-2{
-            width: 10px;
-            height: 10px;
-            @include bp(desktop-big){
-                width: 15px;
-                height: 15px;
-            }
-            margin: 0rem 0.5rem;
-            display: inline-block;
-            border-radius: 100%;
-
-            &.active{
-                background: #0091ff;
-                opacity: 1;
-            }
-            &.disable{
-                background: white;
-            }
-        }   
+        .button-next{
+            right: 0;
+            position: absolute;
+            z-index: 3;
+        }
+        .button-prev{
+            left: 0;
+            position: absolute;
+            z-index: 3;
+        }
+    
+        .hide-arrow{
+            display: none!important;
+        }
         
     }
-    .button-next{
-        right: 0;
-        position: absolute;
-        z-index: 3;
-    }
-    .button-prev{
-        left: 0;
-        position: absolute;
-        z-index: 3;
-    }
-
-    .hide-arrow{
-        opacity: 0!important;
-    }
-    
 }

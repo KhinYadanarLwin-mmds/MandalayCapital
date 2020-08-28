@@ -132,11 +132,12 @@ header .navbar .nav .nav-item:hover:before {
   grid-template-columns: 3fr 2fr;
   height: 30.5rem;
   background: #e9e9ef;
+  position: relative;
 }
 
 @media screen and (min-width: 1700px) and (max-width: 1920px) {
   .banner {
-    height: 40rem;
+    height: 42rem;
   }
 }
 
@@ -149,6 +150,12 @@ header .navbar .nav .nav-item:hover:before {
 @media screen and (min-width: 1360px) and (max-width: 1440px) {
   .banner {
     height: 32.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1350px) {
+  .banner {
+    height: 31rem;
   }
 }
 
@@ -168,7 +175,7 @@ header .navbar .nav .nav-item:hover:before {
 }
 
 .banner .welcome-text h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   padding: 1.1rem 0rem;
   line-height: 1.73;
   position: relative;
@@ -186,64 +193,181 @@ header .navbar .nav .nav-item:hover:before {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
+@media screen and (min-width: 1280px) and (max-width: 1350px) {
   .banner .welcome-text h1 {
     font-size: 2rem;
   }
 }
 
-.banner .welcome-text h1:before {
-  position: absolute;
-  content: "";
-  width: 70%;
-  height: calc(100% + 30px);
-  right: -100px;
-  top: -50px;
-  background-image: url(/img/rectangle-copy-27.png);
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .banner .welcome-text h1 {
+    font-size: 1.5rem;
+  }
 }
 
 .banner .welcome-text p {
   padding: 1rem 0rem;
-}
-
-.banner .welcome-text button {
-  color: white;
-  padding: 0.8rem 2rem;
-  box-shadow: 0 2px 32px 0 rgba(33, 33, 33, 0.21);
-  background-color: #0091ff;
-  border-color: transparent;
+  position: relative;
   margin: 1rem 0rem;
-  width: 14rem;
 }
 
-.banner .welcome-text button:after {
-  content: " \2192";
-  font-size: 1.3rem;
-  padding: 0rem 2rem;
+.banner .welcome-text p:before {
+  position: absolute;
+  content: "";
+  width: 8%;
+  height: 80%;
+  opacity: 0.09;
+  border: solid 1px #979797;
+  background-color: #d8d8d8;
+  transform: skew(-40deg);
+  left: -2rem;
+  top: -18rem;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .banner .welcome-text p:before {
+    top: -15rem;
+  }
+}
+
+.banner .welcome-text p:after {
+  position: absolute;
+  content: "";
+  width: 10%;
+  height: 162%;
+  opacity: 0.03;
+  background-color: #d8d8d8;
+  transform: skew(-40deg);
+  left: -2.1rem;
+  top: -18.5rem;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .banner .welcome-text p:after {
+    left: -2.1rem;
+    top: -15.5rem;
+  }
 }
 
 .banner .welcome-text .item {
   position: relative;
+  padding: 3rem 0rem;
+  margin: 2rem 0rem;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .banner .welcome-text .item {
+    margin: 1.5rem 0rem;
+  }
+}
+
+.banner .welcome-text .item a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 32px 0 rgba(33, 33, 33, 0.21);
+  background-color: #0091ff;
+  font-size: 1rem !important;
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1920px) {
+  .banner .welcome-text .item a {
+    padding: 1.5rem 4rem;
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .banner .welcome-text .item a {
+    font-size: 0.7rem !important;
+  }
+}
+
+.banner .welcome-text .item a:after {
+  content: " \2192";
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1920px) {
+  .banner .welcome-text .item a:after {
+    font-size: 2.3rem;
+  }
 }
 
 .banner .welcome-text .item:after {
   position: absolute;
   content: "";
   width: 15%;
-  height: 80%;
-  right: -215px;
-  bottom: -70px;
-  background-image: url(/img/rectangle.png);
+  height: 55%;
+  bottom: -1.8rem;
+  right: -9.8rem;
+  opacity: 0.09;
+  border: solid 1px #979797;
+  background-color: #d8d8d8;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1350px) {
+  .banner .welcome-text .item:after {
+    bottom: -2.5rem;
+    right: -11.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .banner .welcome-text .item:after {
+    height: 58%;
+    right: -9.5rem;
+    bottom: -2rem;
+  }
 }
 
 .banner .welcome-text .item:before {
   position: absolute;
-  content: url(/img/rectangle-copy-27.png);
-  right: 250px;
-  bottom: -90px;
+  content: "";
+  width: 12%;
+  height: 44%;
+  opacity: 0.09;
+  border: solid 1px #979797;
+  background-color: #d8d8d8;
+  transform: skew(-40deg);
+  right: 0.8rem;
+  top: 2.8rem;
+}
+
+.banner .welcome-text .rectangle-1 {
+  position: absolute;
+  content: "";
+  width: 6%;
+  height: 15%;
+  opacity: 0.05;
+  border: solid 1px #979797;
+  background-color: #d8d8d8;
+  transform: skew(-40deg);
+  bottom: 1.5rem;
+  left: 3rem;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .banner .welcome-text .rectangle-1 {
+    left: 2.3rem;
+  }
+}
+
+.banner .welcome-text .rectangle-3 {
+  position: absolute;
+  content: "";
+  width: 5%;
+  height: 15%;
+  opacity: 0.09;
+  border: solid 1px #979797;
+  background-color: #d8d8d8;
+  transform: skew(-40deg);
+  left: 0rem;
+  bottom: 0rem;
 }
 
 .banner .img-container {
+  position: relative;
   background-color: #e8f9ff;
 }
 
@@ -312,12 +436,52 @@ header .navbar .nav .nav-item:hover:before {
   }
 }
 
-@media screen and (max-width: 1050px) {
-  .banner .welcome-text .item:after {
-    height: 58%;
-    right: -66px;
-    bottom: -32px;
+.banner .img-container:before {
+  position: absolute;
+  content: "";
+  width: 18%;
+  height: 24%;
+  opacity: 0.09;
+  background-color: #0868be;
+  transform: skew(-43deg);
+  right: 8rem;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .banner .img-container:before {
+    height: 28%;
   }
+}
+
+.banner .rectangle {
+  position: absolute;
+  content: "";
+  width: 4%;
+  height: 24%;
+  opacity: 0.09;
+  background-color: #0868be;
+  transform: skew(-44deg);
+  right: 21.1rem;
+  bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .banner .rectangle {
+    right: 17.2rem;
+    bottom: -1rem;
+  }
+}
+
+.banner .rectangle-2 {
+  position: absolute;
+  content: "";
+  width: 4%;
+  height: 36%;
+  opacity: 0.09;
+  background-color: #0868be;
+  transform: skew(-44deg);
+  right: 2.5rem;
+  bottom: 10.5rem;
 }
 
 .what-we-do {
@@ -328,6 +492,7 @@ header .navbar .nav .nav-item:hover:before {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 3.5rem 15rem;
   margin: 3rem 0rem;
+  position: relative;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
@@ -337,23 +502,10 @@ header .navbar .nav .nav-item:hover:before {
 }
 
 .what-we-do div {
-  height: 35rem;
   background: white;
   text-align: center;
   width: 100%;
   position: relative;
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1350px) {
-  .what-we-do div {
-    height: 26rem;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
-  .what-we-do div {
-    height: 21rem;
-  }
 }
 
 .what-we-do div .scroll-bar {
@@ -1429,16 +1581,19 @@ header .navbar .nav .nav-item:hover:before {
   background: linear-gradient(to top left, #fff 0%, #fff 50%, #e2f2ff 50%, #e2f2ff 100%);
 }
 
-.meet-our-team {
+.meet-our-member {
   background-image: radial-gradient(circle at 50% 50%, #007be7, #003a6d 84%);
+  padding: 3rem 5rem;
+}
+
+.meet-our-member .meet-our-team {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3rem 5rem;
   position: relative;
 }
 
-.meet-our-team .heading h1 {
+.meet-our-member .meet-our-team .heading h1 {
   text-align: center;
   color: white;
   font-size: 2rem;
@@ -1447,30 +1602,30 @@ header .navbar .nav .nav-item:hover:before {
 }
 
 @media screen and (min-width: 1700px) and (max-width: 1920px) {
-  .meet-our-team .heading h1 {
+  .meet-our-member .meet-our-team .heading h1 {
     font-size: 2.5rem;
   }
 }
 
-.meet-our-team .heading hr {
+.meet-our-member .meet-our-team .heading hr {
   height: 5px;
   width: 5rem;
   background-color: white;
   margin: 0 auto;
 }
 
-.meet-our-team .swiper-wrapper {
+.meet-our-member .meet-our-team .swiper-wrapper {
   justify-content: center;
 }
 
-.meet-our-team .swiper-wrapper .swiper-slide {
+.meet-our-member .meet-our-team .swiper-wrapper .swiper-slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 @media screen and (min-width: 1700px) and (max-width: 1920px) {
-  .meet-our-team .swiper-wrapper .swiper-slide {
+  .meet-our-member .meet-our-team .swiper-wrapper .swiper-slide {
     margin-left: 4rem !important;
     margin-right: 4rem !important;
     width: 20rem !important;
@@ -1478,7 +1633,7 @@ header .navbar .nav .nav-item:hover:before {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1680px) {
-  .meet-our-team .swiper-wrapper .swiper-slide {
+  .meet-our-member .meet-our-team .swiper-wrapper .swiper-slide {
     margin-left: 4.3rem !important;
     margin-right: 4.3rem !important;
     width: 16rem !important;
@@ -1486,7 +1641,7 @@ header .navbar .nav .nav-item:hover:before {
 }
 
 @media screen and (min-width: 1360px) and (max-width: 1440px) {
-  .meet-our-team .swiper-wrapper .swiper-slide {
+  .meet-our-member .meet-our-team .swiper-wrapper .swiper-slide {
     margin-right: 3.5rem !important;
     margin-left: 3.5rem !important;
     width: 14rem !important;
@@ -1494,7 +1649,7 @@ header .navbar .nav .nav-item:hover:before {
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1350px) {
-  .meet-our-team .swiper-wrapper .swiper-slide {
+  .meet-our-member .meet-our-team .swiper-wrapper .swiper-slide {
     margin-right: 3rem !important;
     margin-left: 3rem !important;
     width: 13rem !important;
@@ -1502,54 +1657,54 @@ header .navbar .nav .nav-item:hover:before {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-  .meet-our-team .swiper-wrapper .swiper-slide {
+  .meet-our-member .meet-our-team .swiper-wrapper .swiper-slide {
     width: 11rem !important;
     margin-right: 2rem !important;
     margin-left: 2rem !important;
   }
 }
 
-.meet-our-team .swiper-wrapper .item {
+.meet-our-member .meet-our-team .swiper-wrapper .item {
   position: relative;
   margin: 3rem 0rem;
   justify-content: flex-end;
   align-items: center;
 }
 
-.meet-our-team .swiper-wrapper .item .image {
+.meet-our-member .meet-our-team .swiper-wrapper .item .image {
   height: 13rem;
   width: 100%;
 }
 
 @media screen and (min-width: 1700px) and (max-width: 1920px) {
-  .meet-our-team .swiper-wrapper .item .image {
+  .meet-our-member .meet-our-team .swiper-wrapper .item .image {
     height: 20rem;
   }
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1680px) {
-  .meet-our-team .swiper-wrapper .item .image {
+  .meet-our-member .meet-our-team .swiper-wrapper .item .image {
     height: 16rem;
   }
 }
 
 @media screen and (min-width: 1360px) and (max-width: 1440px) {
-  .meet-our-team .swiper-wrapper .item .image {
+  .meet-our-member .meet-our-team .swiper-wrapper .item .image {
     height: 14rem;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-  .meet-our-team .swiper-wrapper .item .image {
+  .meet-our-member .meet-our-team .swiper-wrapper .item .image {
     height: 11rem;
   }
 }
 
-.meet-our-team .swiper-wrapper .item .image img {
+.meet-our-member .meet-our-team .swiper-wrapper .item .image img {
   width: 100%;
 }
 
-.meet-our-team .swiper-wrapper .item .icons {
+.meet-our-member .meet-our-team .swiper-wrapper .item .icons {
   width: 100%;
   position: absolute;
   padding: 10px;
@@ -1559,12 +1714,12 @@ header .navbar .nav .nav-item:hover:before {
 }
 
 @media screen and (min-width: 1700px) and (max-width: 1920px) {
-  .meet-our-team .swiper-wrapper .item .icons {
+  .meet-our-member .meet-our-team .swiper-wrapper .item .icons {
     bottom: 5rem;
   }
 }
 
-.meet-our-team .swiper-wrapper .item .icons .icon-img {
+.meet-our-member .meet-our-team .swiper-wrapper .item .icons .icon-img {
   width: 2rem;
   height: 2rem;
   background: white;
@@ -1574,72 +1729,72 @@ header .navbar .nav .nav-item:hover:before {
 }
 
 @media screen and (min-width: 1700px) and (max-width: 1920px) {
-  .meet-our-team .swiper-wrapper .item .icons .icon-img {
+  .meet-our-member .meet-our-team .swiper-wrapper .item .icons .icon-img {
     width: 3rem;
     height: 3rem;
   }
 }
 
-.meet-our-team .swiper-wrapper .item .icons .icon-img img {
+.meet-our-member .meet-our-team .swiper-wrapper .item .icons .icon-img img {
   width: auto;
   height: auto;
   margin-top: 7px;
 }
 
 @media screen and (min-width: 1700px) and (max-width: 1920px) {
-  .meet-our-team .swiper-wrapper .item .icons .icon-img img {
+  .meet-our-member .meet-our-team .swiper-wrapper .item .icons .icon-img img {
     margin-top: 13px;
   }
 }
 
-.meet-our-team .swiper-wrapper .item .role {
+.meet-our-member .meet-our-team .swiper-wrapper .item .role {
   display: block;
   background-color: white;
   width: 100%;
   text-align: center;
 }
 
-.meet-our-team .swiper-wrapper .item .role p:nth-child(1) {
+.meet-our-member .meet-our-team .swiper-wrapper .item .role p:nth-child(1) {
   color: rgba(0, 0, 0, 0.85);
   font-weight: bold;
 }
 
 @media screen and (min-width: 1700px) and (max-width: 1920px) {
-  .meet-our-team .swiper-wrapper .item .role p:nth-child(1) {
+  .meet-our-member .meet-our-team .swiper-wrapper .item .role p:nth-child(1) {
     padding: 1rem;
   }
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1680px) {
-  .meet-our-team .swiper-wrapper .item .role p:nth-child(1) {
+  .meet-our-member .meet-our-team .swiper-wrapper .item .role p:nth-child(1) {
     padding: 1rem;
   }
 }
 
-.meet-our-team .swiper-wrapper .item .role p:nth-child(2) {
+.meet-our-member .meet-our-team .swiper-wrapper .item .role p:nth-child(2) {
   font-size: 0.7rem;
   color: #6d7278;
 }
 
 @media screen and (min-width: 1700px) and (max-width: 1920px) {
-  .meet-our-team .swiper-wrapper .item .role p:nth-child(2) {
+  .meet-our-member .meet-our-team .swiper-wrapper .item .role p:nth-child(2) {
     font-size: 1rem !important;
   }
 }
 
-.meet-our-team .swiper-wrapper .item:hover .icons {
+.meet-our-member .meet-our-team .swiper-wrapper .item:hover .icons {
   display: flex;
   justify-content: center;
   background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0.21) 39%, rgba(5, 5, 5, 0.21) 39%, #0c0c0c);
 }
 
-.meet-our-team .pagination {
+.meet-our-member .meet-our-team .pagination {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.meet-our-team .pagination .pagination-1 {
+.meet-our-member .meet-our-team .pagination .pagination-1 {
   width: 10px;
   height: 10px;
   margin: 0rem 0.5rem;
@@ -1648,21 +1803,21 @@ header .navbar .nav .nav-item:hover:before {
 }
 
 @media screen and (min-width: 1700px) and (max-width: 1920px) {
-  .meet-our-team .pagination .pagination-1 {
+  .meet-our-member .meet-our-team .pagination .pagination-1 {
     width: 15px;
     height: 15px;
   }
 }
 
-.meet-our-team .pagination .pagination-1.active {
+.meet-our-member .meet-our-team .pagination .pagination-1.active {
   background: #0091ff;
 }
 
-.meet-our-team .pagination .pagination-1.disable {
+.meet-our-member .meet-our-team .pagination .pagination-1.disable {
   background: white;
 }
 
-.meet-our-team .pagination .pagination-2 {
+.meet-our-member .meet-our-team .pagination .pagination-2 {
   width: 10px;
   height: 10px;
   margin: 0rem 0.5rem;
@@ -1671,34 +1826,34 @@ header .navbar .nav .nav-item:hover:before {
 }
 
 @media screen and (min-width: 1700px) and (max-width: 1920px) {
-  .meet-our-team .pagination .pagination-2 {
+  .meet-our-member .meet-our-team .pagination .pagination-2 {
     width: 15px;
     height: 15px;
   }
 }
 
-.meet-our-team .pagination .pagination-2.active {
+.meet-our-member .meet-our-team .pagination .pagination-2.active {
   background: #0091ff;
   opacity: 1;
 }
 
-.meet-our-team .pagination .pagination-2.disable {
+.meet-our-member .meet-our-team .pagination .pagination-2.disable {
   background: white;
 }
 
-.meet-our-team .button-next {
+.meet-our-member .meet-our-team .button-next {
   right: 0;
   position: absolute;
   z-index: 3;
 }
 
-.meet-our-team .button-prev {
+.meet-our-member .meet-our-team .button-prev {
   left: 0;
   position: absolute;
   z-index: 3;
 }
 
-.meet-our-team .hide-arrow {
-  opacity: 0 !important;
+.meet-our-member .meet-our-team .hide-arrow {
+  display: none !important;
 }
 

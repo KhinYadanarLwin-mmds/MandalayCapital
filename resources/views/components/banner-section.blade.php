@@ -9,10 +9,10 @@
                 <p>Starting an SME from scratch is hard work.
                     <br>
                     Achieve new heights for your business with our business loan.</p>
-                <button>
-                    Expand Today
-                </button>
+                <a href="">Expand Today</a>
             </div>
+            <div class="rectangle-1"></div>
+            <div class="rectangle-3"></div>
         </div>
         <div class="img-container">
             <div class="img-wrapper">
@@ -21,4 +21,6 @@
                 <img src="/img/img-3.png" alt="" id="banner-image-three" />
             </div>
         </div>
+        <div class="rectangle"></div>
+        <div class="rectangle-2"></div>
     </section>
