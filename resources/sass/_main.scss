@@ -28,6 +28,9 @@ body{
         font-size: 0.8rem!important;
         line-height: 1.5rem!important;
     }
+    @include bp(mobile){
+        font-size: 0.8rem;
+    }
 }
 
 button{

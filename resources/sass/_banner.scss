@@ -2,23 +2,27 @@
     color: white;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    height: 30.5rem;
+    // height: 30.5rem;
     background: #e9e9ef;
     position: relative;
+    overflow: hidden;
     @include bp(desktop-big){
-        height: 42rem;
+        // height: 42rem;
     }
     @include bp(desktop){
-        height: 39rem;
+        // height: 39rem;
     }
     @include bp(desktop-1){
-        height: 32.5rem;
+        // height: 32.5rem;
     }
     @include bp(laptop){
-        height: 31rem;
+        // height: 31rem;
     }
     @include bp(laptop-1){
-        height: 26.5rem;
+        // height: 26.5rem;
+    }
+    @include bp(mobile){
+        grid-template-columns: 1fr;
     }
 
     .welcome-text{
@@ -28,6 +32,9 @@
         padding: 3rem 5rem;
         min-width: 0px;
         position: relative;
+        @include bp(mobile){
+            padding: 1rem 1rem;
+        }
 
         h1{
             font-size: 2.3rem;
@@ -42,6 +49,9 @@
             }
             @include bp(laptop-1){
                 font-size: 1.5rem;
+            }
+            @include bp(mobile){
+                font-size: 1.3rem;
             }
             padding: 1.1rem 0rem;
             line-height: 1.73;
@@ -95,6 +105,10 @@
             @include bp(laptop-1){
                 margin: 1.5rem 0rem;
             }
+            @include bp(mobile){
+                padding: 1rem 0rem;
+                margin: 0rem 0rem;
+            }
 
             a{
                 text-decoration: none;
@@ -109,6 +123,9 @@
                 }
                 @include bp(laptop-1){
                     font-size: 0.7rem!important;
+                }
+                @include bp(mobile){
+                    font-size: 0.8rem!important;
                 }
 
                 &:after{
@@ -189,6 +206,9 @@
     .img-container{
 
         position: relative;
+        @include bp(mobile){
+            height: 20rem;
+        }
 
         background-color: #e8f9ff;
         .img-wrapper{
@@ -210,6 +230,10 @@
                     padding: 5px;
                     border-top-left-radius: 2em;
                     border-bottom-right-radius: 2em;
+                    @include bp(mobile){
+                        width: 56%;
+                        margin-left: 14rem;
+                    }
     
                 }
     
@@ -219,6 +243,11 @@
                     left: 0;
                     width: 40%;
                     height: auto;
+                    @include bp(mobile){
+                        width: 20%;
+                        bottom: -0.7rem;
+                        left: 11rem;
+                    }
                 }
     
                 &:nth-child(3){
@@ -227,6 +256,12 @@
                     left: 60%;
                     width: 40%;
                     height: auto;
+
+                    @include bp(mobile){
+                        width: 20%;
+                        bottom: -2.3rem;
+                        left: 98%;
+                    }
                 }
     
             }
