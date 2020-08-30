@@ -26,6 +26,7 @@ header {
     }
     .navbar{
         ul{
+            display: flex;
             li{
                 list-style: none;
                 display: inline-block;

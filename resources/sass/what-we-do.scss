@@ -13,6 +13,9 @@
     @include bp(laptop-1){
         padding: 3.5rem 12rem;
     }
+    @include bp(mobile){
+        padding: 2rem 2rem;
+    }
 
     div{
         background: white;
@@ -47,11 +50,13 @@
                 }
             }
         }
-      
-
 
         h1{
             font-size: 2rem;
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+            font-weight: bold;
+            color: #005aab;
             @include bp(desktop-big){
                 font-size: 2.5rem;
                 padding-top: 6rem;
@@ -66,18 +71,21 @@
                 padding-top: 3rem;
                 padding-bottom: 2rem;
             }
-            padding-top: 4rem;
-            padding-bottom: 3rem;
-            font-weight: bold;
-            color: #005aab;
+            @include bp(mobile){
+                padding-top: 2rem;
+                padding-bottom: 1rem;
+                font-size: 1.5rem;
+            }
         }
 
         p{
+            padding-top: 1rem;
+            padding-bottom: 3rem;
+            font-weight: 500;
             @include bp(desktop){
                 font-size: 1.5rem;
                 line-height: 2.5rem;
             }
-
             @include bp(desktop-big){
                 font-size: 1.5rem;
                 line-height: 3.5rem;
@@ -85,9 +93,10 @@
             @include bp(laptop-1){
                 line-height: 1.8rem;
             }
-            padding-top: 1rem;
-            padding-bottom: 3rem;
-            font-weight: 500;
+            @include bp(mobile){
+                font-size: 0.8rem;
+                line-height: 1.5rem;
+            }
         }
 
     }
